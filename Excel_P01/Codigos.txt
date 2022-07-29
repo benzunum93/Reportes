@@ -1,0 +1,11 @@
+Entradas de fechas
+
+<label for="entrada_usuario"> Fecha de inicio</label>
+                <input type="date" id="start" name="trip-start"
+                value="2022-07-22"
+                min="2011-01-01" max="2060-12-31">
+
+                <label for="entrada_usuario"> Fecha final</label>
+                <input type="date" id="final" name="trip-final"
+                value="2022-07-22"
+                min="2011-01-01" max="2060-12-31">

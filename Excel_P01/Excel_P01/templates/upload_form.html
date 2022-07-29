@@ -1,0 +1,42 @@
+{% extends "plantilla.html" %}
+{% load static %}
+
+<html>
+<head>
+    <title>{{title}}</title>
+</head>
+{% block contenido %}
+<body>
+    
+        
+    <div class="p-5 bg-light">
+        <div class="container">
+            <h1 class="display-3">¡Bienvenido! Por favor seleccione el archivo "Cuadro de Control 2XXX" deseado:
+            </h1>
+            <hr class="my-2"><!--Linea de separacion-->          
+            
+            <p><form action="" enctype="multipart/form-data"  method="post">
+                <table>
+                    {{ form.as_table }}
+                    
+                </table>
+                {% csrf_token %}
+                <p></p>
+                <input type="submit" class="btn btn-success" value="Subir">
+            </p>
+            
+            {% if form.errors %}
+                <p style="color: red;">
+                    Please correct the error{{ form.errors|pluralize }} below.
+                </p>
+            {% endif %}
+
+            </form>   
+        </div>
+    </div>
+        
+    
+</body>
+
+{% endblock %}
+</html>

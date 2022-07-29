@@ -1,0 +1,24 @@
+{% extends "plantilla.html" %}
+{% load static %}
+
+{% block contenido %}
+<div class="p-5 bg-light">
+    <div class="container">
+    <h1 class="display-3">Bienvenido, por favor eliga el tipo de informe que requiera realizar:</h1>
+    <hr class="my-2"><!--Linea de separacion-->
+        
+        <!--Buttons-->
+        <a name="Horas_Pilotos" id="Horas_Pilotos" class="btn btn-primary" href="/excel_app/horas" role="button">Horas de Pilotos</a>        
+        <a name="Alojamientos" id="Alojamiento" class="btn btn-primary" href="/excel_app/horas" role="button">Alojamiento</a>        
+        <a name="numero_personas" id="numero_personas" class="btn btn-primary" href="/excel_app/conteo" role="button">Numero de Personas por Fechas</a>        
+        <a name="Horas_PilotosFAC" id="Horas_PilotosFAC" class="btn btn-primary" href="/excel_app/horas" role="button">Horas FAC</a>        
+        <a name="Horas_PilotosFAB" id="Horas_PilotosFAB" class="btn btn-primary" href="/excel_app/horas" role="button">Horas FAB</a>        
+        <p></p>
+        <p>
+        <a name="Inicio" id="Inicio" class="btn btn-danger" href="/excel_app" role="button">Back</a>       
+        </p>
+    </div>
+</div>
+        
+        
+{%endblock %}
