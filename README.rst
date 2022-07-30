@@ -1,61 +1,6 @@
-#Aplicaciones para linux
-https://ubuntu.com/blog/top-10-apps-for-a-fresh-linux-install-in-2021
 ================================================================================
 django-excel - Let you focus on data, instead of file formats
 ================================================================================
-
-.. image:: https://raw.githubusercontent.com/pyexcel/pyexcel.github.io/master/images/patreon.png
-   :target: https://www.patreon.com/chfw
-
-.. image:: https://raw.githubusercontent.com/pyexcel/pyexcel-mobans/master/images/awesome-badge.svg
-   :target: https://awesome-python.com/#specific-formats-processing
-
-.. image:: https://travis-ci.org/pyexcel-webwares/django-excel.svg?branch=master
-   :target: http://travis-ci.org/pyexcel-webwares/django-excel
-
-.. image:: https://codecov.io/gh/pyexcel-webwares/django-excel/branch/master/graph/badge.svg
-   :target: https://codecov.io/gh/pyexcel-webwares/django-excel
-
-.. image:: https://badge.fury.io/py/django-excel.svg
-   :target: https://pypi.org/project/django-excel
-
-
-.. image:: https://pepy.tech/badge/django-excel/month
-   :target: https://pepy.tech/project/django-excel
-
-
-.. image:: https://img.shields.io/gitter/room/gitterHQ/gitter.svg
-   :target: https://gitter.im/pyexcel/Lobby
-
-.. image:: https://img.shields.io/static/v1?label=continuous%20templating&message=%E6%A8%A1%E7%89%88%E6%9B%B4%E6%96%B0&color=blue&style=flat-square
-    :target: https://moban.readthedocs.io/en/latest/#at-scale-continous-templating-for-open-source-projects
-
-.. image:: https://img.shields.io/static/v1?label=coding%20style&message=black&color=black&style=flat-square
-    :target: https://github.com/psf/black
-.. image:: https://readthedocs.org/projects/django-excel/badge/?version=latest
-   :target: http://django-excel.readthedocs.org/en/latest/
-
-Support the project
-================================================================================
-
-If your company has embedded pyexcel and its components into a revenue generating
-product, please support me on github, `patreon <https://www.patreon.com/bePatron?u=5537627>`_
-or `bounty source <https://salt.bountysource.com/teams/chfw-pyexcel>`_ to maintain
-the project and develop it further.
-
-If you are an individual, you are welcome to support me too and for however long
-you feel like. As my backer, you will receive
-`early access to pyexcel related contents <https://www.patreon.com/pyexcel/posts>`_.
-
-And your issues will get prioritized if you would like to become my patreon as `pyexcel pro user`.
-
-With your financial support, I will be able to invest
-a little bit more time in coding, documentation and writing interesting posts.
-
-
-Known constraints
-==================
-
 Fonts, colors and charts are not supported.
 
 Nor to read password protected xls, xlsx and ods files.
