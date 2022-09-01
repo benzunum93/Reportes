@@ -1,0 +1,47 @@
+{% extends "plantilla.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+<!--Escribir contenido de la pagina-->
+{% block contenido %}
+<div class="p-5 bg-light">
+    <div class="container">
+        <h1 class="display-3">Por favor digite la Fuerza y las fechas entre las que quiere consultar:</h1>
+        <hr class="my-2"><!--Linea de separacion-->
+            
+        <form action="" method = "post">
+            <div class="form-group">
+                {% csrf_token %}  
+                <label for="formGroupExampleInput">
+                    <table>
+                        <p>Fuerzas disponibles:
+                        <li>EJC</li>
+                        <li>FAC</li>
+                        <li>FAB</li>
+                        <li>PNC</li>
+                    </p>
+                        {{ form.as_table }}
+                        
+                    </table> 
+                   
+                </label>
+                
+               
+        
+               
+                {% if form.errors %}
+                    <p style="color: red;">
+                        Please correct the error{{ form.errors|pluralize }} above.
+                    </p>
+                {% endif %}
+            </div>    
+                <input type = "submit" class="btn btn-success btn-lg active" value = "Submit">
+                <a name="Inicio" id="Inicio" class="btn btn-danger btn-lg active" href="/ciac_app/tipo_informe" role="button">Back</a>
+             
+            </form>
+           
+
+    </div>
+
+</div>
+
+{% endblock %}

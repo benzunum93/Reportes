@@ -1,0 +1,61 @@
+{% extends "plantilla.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+<!--Escribir contenido de la pagina
+    Muestra el resultado del conteo 
+    de personas en fechas determinadas-->
+{% block contenido %}
+<div class="p-5 bg-light">
+    <div class="container">
+        <h1 class="display-3">Por favor escriba la cantidad de Pilotos que requiera consultar, adicional escriba sus Nombres y Apellidos</h1>
+        <hr class="my-2"><!--Linea de separacion-->
+            
+        <form action="" method = "post">
+            <div class="form-group">
+                {% csrf_token %}  
+                <label for="formGroupExampleInput">
+                    <table>
+
+                        <p style="color: red;">
+                            Numero de personas de {{fuerza.fuerza}} que asistieron entre {{fuerza.fecha_inicial}} y {{fuerza.fecha_final}} fueron:
+                        </p>
+                        Personal:
+                        <!--Escribe todos los nombres del personal-->
+                        {% for key, value in personas.items %}
+                        <tr>
+                        <li>En la fecha {{key}} entrenaron {{value}} personas</li>
+                        <td></td>
+                        
+                        </tr>
+                        {% endfor %}
+                        
+                        
+                        
+                        
+                         
+                        
+                    </table> 
+                   
+                </label>
+                
+               
+        
+               
+                {% if form.errors %}
+                    <p style="color: red;">
+                        Please correct the error{{ form.errors|pluralize }} above.
+                    </p>
+                {% endif %}
+            </div>    
+                <input type = "submit" class="btn btn-success btn-lg active" value = "Submit">
+                <a name="New" id="New" class="btn btn-primary btn-lg active" href="/ciac_app/conteo" role="button">Nuevo Conteo</a>
+                <a name="Inicio" id="Inicio" class="btn btn-danger btn-lg active" href="/ciac_app/tipo_informe" role="button">Back</a>
+             
+            </form>
+           
+
+    </div>
+
+</div>
+
+{% endblock %}

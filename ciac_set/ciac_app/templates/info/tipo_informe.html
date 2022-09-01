@@ -1,0 +1,24 @@
+{% extends "plantilla.html" %}
+{% load static %}
+
+{% block contenido %}
+<div class="p-5 bg-light">
+    <div class="container">
+    <h1 class="display-3">Bienvenido, por favor eliga el tipo de informe que requiera realizar:</h1>
+    <hr class="my-2"><!--Linea de separacion-->
+        
+        <!--Buttons-->
+        <a name="Horas_Pilotos" id="Horas_Pilotos" class="btn btn-primary" href="/ciac_app/horas" role="button">Horas de Pilotos</a>        
+        <a name="Reporte_FAC_FAB" id="Reporte_FAC_FAB" class="btn btn-primary" href="/ciac_app/reporteFAC" role="button">Reporte FAC-FAB</a>        
+        <a name="numero_personas" id="numero_personas" class="btn btn-primary" href="/ciac_app/conteo" role="button">Numero de Personas por Fechas</a>        
+        <a name="Reporte_EJC" id="Reporte_EJC" class="btn btn-primary" href="/ciac_app/reporteEJC" role="button">Reporte EJC</a>        
+        <a name="Horas_PilotosFAB" id="Horas_PilotosFAB" class="btn btn-primary" href="/ciac_app/horas" role="button">Horas FAB</a>        
+        <p></p>
+        <p>
+        <a name="Inicio" id="Inicio" class="btn btn-danger" href="/ciac_app" role="button">Back</a>       
+        </p>
+    </div>
+</div>
+        
+        
+{%endblock %}

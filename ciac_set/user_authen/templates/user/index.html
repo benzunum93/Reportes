@@ -1,0 +1,18 @@
+{%extends "plantilla.html"%}
+<!-- User_auth-->
+{% load crispy_forms_tags %}
+{% block start %}
+{% if user.is_authenticated %}
+    <!-- Contenido para usuarios autenticados-->
+    <center><h1>Welcome back {{user.username}}!</h1></center>
+    
+    {% else %}
+    <!-- Contenido para todo el publico-->
+    <center><h1>Thank you...</h1></center>
+    <br/>
+    <center><h1>We will miss you.</h1></center>
+    <br>
+    <br>
+    
+    {% endif %}
+{% endblock start %}
