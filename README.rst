@@ -1,9 +1,10 @@
 ================================================================================
 django-excel - Let you focus on data, instead of file formats
 ================================================================================
-Fonts, colors and charts are not supported.
+Create a web page to import a excel file and then fetch data in a excel sheet file name "Entrenamientos", 
+and the data it is save SQLite Database, then take input from the Client to make excel files and show the desired 
+data that the client want in the web page
 
-Nor to read password protected xls, xlsx and ods files.
 
 Introduction
 ================================================================================
